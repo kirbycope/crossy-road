@@ -22,12 +22,18 @@ fill -16 3 110 16 8 114 minecraft:black_concrete
 fill -16 3 118 -16 8 128 minecraft:black_concrete
 fill -16 3 161 -16 8 171 minecraft:black_concrete
 
-execute as @a[scores={timer=0}] as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]} 
+# TIMER INFO #
+# starts at 0, increments to 60. 20 ticks in a second, so a 3 second timer
+# timer = 20, 1 second.
+# timer = 40, 2 second.
+# timer = 60, 3 second.
 
 
 ## Blue car
-# Every 2 seconds spawn an armor stand to serve as the anchor for the blueCar
+# Every few seconds spawn an armor stand to serve as the anchor for the blueCar
 #execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
+execute as @a[scores={timer=0}] as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
+execute as @a[scores={timer=0}] run scoreboard players set @s timer 1
 # Move the blueCar armor stand
 execute as @e[tag=blueCar] at @s run tp @s ~ ~ ~-0.4
 # Kill anyone the blueCar hit
@@ -36,4 +42,4 @@ execute as @e[tag=blueCar] at @s positioned ~-1 ~-1 -13 run kill @s[dx=3,dy=5,dz
 execute as @e[tag=blueCar] at @s run clone -28 -13 -5 -24 -10 3 ~-2 ~2 ~-4
 
 # clone blue car blocks
-clone  11 -63 5 3 -60 9/
+clone  11 -63 5 3 -60 9
