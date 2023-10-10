@@ -36,4 +36,4 @@ execute as @e[tag=blueCar] at @s positioned ~-1 ~-1 -13 run kill @s[dx=3,dy=5,dz
 execute as @e[tag=blueCar] at @s run clone -28 -13 -5 -24 -10 3 ~-2 ~2 ~-4
 
 # clone blue car blocks
-clone  11 -63 5 3 -60 9
+#clone  11 -63 5 3 -60 9
