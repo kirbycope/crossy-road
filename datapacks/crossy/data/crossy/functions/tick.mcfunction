@@ -21,13 +21,13 @@ fill -16 3 36 -16 8 40 minecraft:black_concrete
 fill -16 3 71 -16 8 82 minecraft:black_concrete
 fill -16 3 85 -16 8 89 minecraft:black_concrete
 fill -16 3 99 -16 8 103 minecraft:black_concrete
-fill -16 3 110 16 8 114 minecraft:black_concrete
+fill -16 3 110 -16 8 114 minecraft:black_concrete
 fill -16 3 118 -16 8 128 minecraft:black_concrete
 fill -16 3 161 -16 8 171 minecraft:black_concrete
 
 ## Blue car
-# Every 2 seconds spawn an armor stand to serve as the anchor for the blueCar
-#execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
+# Every 2 seconds spawn an armor stand to serve as the anchor for the blueCar at the blueCar anchor
+# execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
 # Move the blueCar armor stand
 execute as @e[tag=blueCar] at @s run tp @s ~ ~ ~-0.4
 # Kill anyone the blueCar hit
