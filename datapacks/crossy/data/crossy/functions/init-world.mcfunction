@@ -9,9 +9,10 @@ kill @e[type=minecraft:chicken]
 summon minecraft:chicken 7 3 47
 
 # Car anchors
-kill @e[tag="blueSpawner"]
-kill @e[tag="greenSpawner"]
-kill @e[tag="orangeSpawner"]
+kill @e[tag=blueSpawner]
+kill @e[tag=greenSpawner]
+kill @e[tag=orangeSpawner]
+kill @e[tag=yellowSpawner]
 
 summon armor_stand -21 3 24 {Tags:["blueSpawner"]}
 summon armor_stand 21 3 30 {Tags:["orangeSpawner"]}
