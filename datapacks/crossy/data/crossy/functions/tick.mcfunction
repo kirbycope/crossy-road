@@ -21,7 +21,10 @@ execute as @e[tag=blueCar] at @s positioned ~-1 ~-1 -13 run kill @s[dx=3,dy=5,dz
 execute as @e[tag=blueCar] at @s run clone 11 -63 5 3 -60 9 ~ ~ ~-2
 
 # clone blue car blocks
-#clone  11 -63 5 3 -60 9
+#blueCar 11 -63 5 3 -60 9
+#orangeCar -11 -63 9 -3 -60 5
+#greenCar 11 -63 9 3 -60 -6
+#orangeCar -11 63 -5 -3 -60 -9
 
 # Fill Tunnel entrances
 fill 16 3 22 16 8 32 minecraft:black_concrete
