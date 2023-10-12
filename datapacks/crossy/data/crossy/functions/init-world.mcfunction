@@ -8,6 +8,14 @@ gamerule sendCommandFeedback false
 kill @e[type=minecraft:chicken]
 summon minecraft:chicken 7 3 47
 
+# Timers
+scoreboard objectives add timer1 dummy
+scoreboard players add world timer1 0
+scoreboard objectives add timer2 dummy
+scoreboard players add world timer2 0
+scoreboard objectives add timer3 dummy
+scoreboard players add world timer3 0
+
 # Car anchors
 kill @e[tag=blueSpawner]
 kill @e[tag=greenSpawner]
