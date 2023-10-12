@@ -28,7 +28,7 @@ fill -16 3 161 -16 8 171 minecraft:black_concrete
 ## Blue car
 # Every 2 seconds spawn an armor stand to serve as the anchor for the blueCar at the blueCar anchor
 # execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
- execute at @a[scores={timer1=20}] as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
+execute if score world timer1 matches 0 run execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
 
 # Move the blueCar armor stand
 execute as @e[tag=blueCar] at @s run tp @s ~ ~ ~-0.4
@@ -42,14 +42,14 @@ execute as @e[tag=blueCar] at @s run clone -28 -13 -5 -24 -10 3 ~-2 ~2 ~-4
 
 ## Timers
 # Reset the 1-second timer if it reaches 20 ticks
-execute as @a[scores={timer1=20}] run scoreboard players set @s timer1 0
+execute if score world timer1 matches 20 run scoreboard players set world timer1 0
 # Increment timer 1
-scoreboard players add @a[scores={timer1=0..}] timer1 1
+scoreboard players add world timer1 1
 # Reset the 2-second timer if it reaches 40 ticks
-execute as @a[scores={timer2=40}] run scoreboard players set @s timer2 0
+execute if score world timer2 matches 40 run scoreboard players set world timer2 0
 # Increment timer 2
-scoreboard players add @a[scores={timer2=0..}] timer2 1
+scoreboard players add world timer2 1
 # Reset the 3-second timer if it reaches 60 ticks
-execute as @a[scores={timer3=60}] run scoreboard players set @s timer3 0
+execute if score world timer3 matches 60 run scoreboard players set world timer3 0
 # Increment timer 3
-scoreboard players add @a[scores={timer3=0..}] timer3 1
+scoreboard players add world timer3 1
