@@ -28,7 +28,7 @@ fill -16 3 161 -16 8 171 minecraft:black_concrete
 ## Blue car
 # Every 2 seconds spawn an armor stand to serve as the anchor for the blueCar at the blueCar anchor
 # execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
-execute if score world timer1 matches 0 run execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
+execute if score world timer1 matches 1 run execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
 
 # Move the blueCar armor stand
 execute as @e[tag=blueCar] at @s run tp @s ~ ~ ~-0.4
