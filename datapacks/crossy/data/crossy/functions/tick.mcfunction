@@ -7,8 +7,13 @@ tp @e[type=minecraft:chicken] 7 3.1 47
 # Remove chicken eggs
 kill @e[type=item]
 
+# Set max health to 0.1
+execute as @a run attribute @s minecraft:generic.max_health base set 0.1
+
 # Kill player(s) in water
 execute as @a at @s run execute if block ~ ~ ~ minecraft:water run kill @s
+
+# Kill players hit by vehicle
 execute as @a at @s run execute unless block ~ ~1 ~ minecraft:air run kill @s
 
 ## Blue car
