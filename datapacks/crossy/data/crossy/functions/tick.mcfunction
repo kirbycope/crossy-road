@@ -8,11 +8,9 @@ tp @e[type=minecraft:chicken] 7 3.1 47
 kill @e[type=item]
 
 ## Blue car
-# Every 2 seconds spawn an armor stand to serve as the anchor for the blueCar at the blueCar anchor
-# execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
+# Spawn blueCar
 execute if score world timer2 matches 1 run execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
-# Move the blueCar armor stand
-# execute as @e[tag=blueCar] at @s run tp @s ~ ~ ~-0.4
+# Move the blueCar
 execute as @e[tag=blueCar] at @s run tp @s ~0.4 ~ ~
 # Kill anyone the blueCar hit
 #execute as @e[tag=blueCar] at @s positioned ~-1 ~-1 -13 run kill @s[dx=3,dy=5,dz=-5]
@@ -21,67 +19,56 @@ execute as @e[tag=blueCar] at @s run tp @s ~0.4 ~ ~
 execute as @e[tag=blueCar] at @s run clone 11 -63 5 3 -60 9 ~ ~2 ~-2
 
 ## Orange car
-# execute at @a as @e[tag=orangeSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["orangeCar"]}
+# Spawn new orangeCar
 execute if score world timer2 matches 1 run execute at @a as @e[tag=orangeSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["orangeCar"]}
-# Move the orangeCar armor stand
-# execute as @e[tag=orangeCar] at @s run tp @s ~ ~ ~0.5
+# Move the orangeCar
 execute as @e[tag=orangeCar] at @s run tp @s ~-0.5 ~ ~
 # Kill anyone the orangeCar hit
 # execute as @e[tag=orangeCar] at @s positioned ~-1 ~-1 28 run kill @s[dx=3,dy=5,dz=5]
-# TODO
 # Clone the blocks at the orangeCar's position
-# execute as @e[tag=orangeCar] at @s run clone -22 -13 -5 -18 -10 3 ~-2 ~2 ~-4
 execute as @e[tag=orangeCar] at @s run clone -11 -63 9 -3 -60 5 ~ ~2 ~-2
 
 ## Green car
-# execute at @a as @e[tag=greenSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["greenCar"]}
+# Spawn new greenCar
 execute if score world timer2 matches 1 run execute at @a as @e[tag=greenSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["greenCar"]}
-# Move the greenCar armor stand
-# execute as @e[tag=greenCar] at @s run tp @s ~ ~ ~-0.75
+# Move the greenCar
 execute as @e[tag=greenCar] at @s run tp @s ~0.75 ~ ~
 # Kill anyone the greenCar hit
 # execute as @e[tag=greenCar] at @s positioned ~-1 ~-1 -13 run kill @s[dx=3,dy=5,dz=-5]
-# TODO
 # Clone the blocks at the greenCar's position
-# execute as @e[tag=greenCar] at @s run clone -16 -13 -5 -12 -10 3 ~-2 ~2 ~-4
 execute as @e[tag=greenCar] at @s run clone 11 -63 -9 3 -60 -5 ~ ~2 ~-2
 
 ## Yellow car
-# execute at @a as @e[tag=yellowSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["yellowCar"]}
+# Spawn new yellowCar
 execute if score world timer2 matches 1 run execute at @a as @e[tag=yellowSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["yellowCar"]}
-# Move the yellowCar armor stand
-# execute as @e[tag=yellowCar] at @s run tp @s ~ ~ ~1
+# Move the yellowCar
 execute as @e[tag=yellowCar] at @s run tp @s ~-1 ~ ~
 # Kill anyone the yellowCar hit
 # execute as @e[tag=yellowCar] at @s positioned ~-1 ~-1 28 run kill @s[dx=3,dy=5,dz=5]
-# TODO
 # Clone the blocks at the yellowCar's position
-# execute as @e[tag=yellowCar] at @s run clone -10 -13 -5 -6 -10 3 ~-2 ~2 ~-4
 execute as @e[tag=yellowCar] at @s run clone -11 -63 -5 -3 -60 -9 ~ ~2 ~-2
 
 ## Train 1
+# Spawn new  train1
 execute if score world timer2 matches 1 run execute at @a as @e[tag=train1Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train1"]}
 execute as @e[tag=train1] at @s run tp @s ~-4 ~ ~
 # execute as @e[tag=train1] at @s positioned ~-1 ~-1 60 run kill @s[dx=3,dy=5,dz=5]
-# TODO
-# execute as @e[tag=train1] at @s run clone 7 -13 22 5 -10 -10 ~ ~2 ~-31
-execute as @e[tag=train1] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~-1
+execute as @e[tag=train1] at @s run clone 18 -63 13 -15 -60 15 ~ ~2 ~-1
 
 ## Train 2
+# Spawn new train2
 #execute at @a as @e[tag=train2Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train2"]}
-#execute as @e[tag=train2] at @s run tp @s ~ ~ ~-3
+execute if score world timer2 matches 1 run execute at @a as @e[tag=train2Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train2"]}
+#execute as @e[tag=train2] at @s run tp @s ~3 ~ ~
 # execute as @e[tag=train2] at @s positioned ~-1 ~-1 -45 run kill @s[dx=3,dy=5,dz=-5]
-# TODO
-# execute as @e[tag=train2] at @s run clone 7 -13 25 5 -10 -7 ~ ~2 ~
-#execute as @e[tag=train2] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~
+execute as @e[tag=train2] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~
 
 ## Train 3
-#execute at @a as @e[tag=train3Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train3"]}
-#execute as @e[tag=train3] at @s run tp @s ~ ~ ~5
+# Spawn new train3
+execute at @a as @e[tag=train3Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train3"]}
+execute as @e[tag=train3] at @s run tp @s ~-5 ~ ~
 # execute as @e[tag=train3] at @s positioned ~-1 ~-1 60 run kill @s[dx=3,dy=5,dz=5]
-# TODO
-# execute as @e[tag=train3] at @s run clone 7 -13 22 5 -10 -11 ~ ~2 ~-32
-#execute as @e[tag=train3] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~-32
+execute as @e[tag=train3] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~-32
 
 # clone blue car blocks
 #blueCar 11 -63 5 3 -60 9
