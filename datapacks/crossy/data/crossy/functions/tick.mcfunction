@@ -8,7 +8,7 @@ tp @e[type=minecraft:chicken] 7 3.1 47
 kill @e[type=item]
 
 # Kill player(s) in water
-execute as @a[tag=init] run execute if block ~ ~ ~ minecraft:water run kill @s
+execute as @a run execute if block ~ ~ ~ minecraft:water run kill @s
 
 ## Blue car
 # Spawn blueCar
