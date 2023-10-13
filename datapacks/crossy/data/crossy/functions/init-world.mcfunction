@@ -22,18 +22,18 @@ kill @e[tag=greenSpawner]
 kill @e[tag=orangeSpawner]
 kill @e[tag=yellowSpawner]
 
-summon armor_stand -21 3 24 {CustomNameVisible:1b,TagsTags:["blueSpawner"]}
-summon armor_stand 21 3 30 {CustomNameVisible:1b,TagsTags:["orangeSpawner"]}
+summon armor_stand -21 3 24 {TagsTags:["blueSpawner"]}
+summon armor_stand 21 3 30 {TagsTags:["orangeSpawner"]}
 
-summon armor_stand -21 3 38 {CustomNameVisible:1b,TagsTags:["blueSpawner"]}
+summon armor_stand -21 3 38 {TagsTags:["blueSpawner"]}
 
-summon armor_stand 21 3 73 {CustomNameVisible:1b,TagsTags:["orangeSpawner"]}
-summon armor_stand -21 3 79 {CustomNameVisible:1b,TagsTags:["blueSpawner"]}
+summon armor_stand 21 3 73 {TagsTags:["orangeSpawner"]}
+summon armor_stand -21 3 79 {TagsTags:["blueSpawner"]}
 
-summon armor_stand 21 3 87 {CustomNameVisible:1b,TagsTags:["orangeSpawner"]}
+summon armor_stand 21 3 87 {TagsTags:["orangeSpawner"]}
 
-summon armor_stand -21 3 101 {CustomNameVisible:1b,Tags:["greenSpawner"]}
+summon armor_stand -21 3 101 {Tags:["greenSpawner"]}
 
 summon armor_stand 21 3 163 {Tags:["yellowSpawner"]}
 
-summon armor_stand -21 3 169 {CustomNameVisible:1b,Tags:["greenSpawner"]}
+summon armor_stand -21 3 169 {Tags:["greenSpawner"]}
