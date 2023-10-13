@@ -16,7 +16,6 @@ execute as @a at @s run execute if block ~ ~ ~ minecraft:water run kill @s
 # Kill players hit by vehicle
 execute as @a at @s run execute unless block ~ ~1 ~ minecraft:air run kill @s
 
-## Blue car
 # Spawn blueCar
 execute if score world timer2 matches 1 run execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
 # Move the blueCar
@@ -24,7 +23,6 @@ execute as @e[tag=blueCar] at @s run tp @s ~0.4 ~ ~
 # Clone the blocks at the blueCar's position
 execute as @e[tag=blueCar] at @s run clone 11 -63 5 3 -60 9 ~ ~2 ~-2
 
-## Orange car
 # Spawn new orangeCar
 execute if score world timer2 matches 1 run execute at @a as @e[tag=orangeSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["orangeCar"]}
 # Move the orangeCar
@@ -32,7 +30,6 @@ execute as @e[tag=orangeCar] at @s run tp @s ~-0.5 ~ ~
 # Clone the blocks at the orangeCar's position
 execute as @e[tag=orangeCar] at @s run clone -11 -63 9 -3 -60 5 ~ ~2 ~-2
 
-## Green car
 # Spawn new greenCar
 execute if score world timer2 matches 1 run execute at @a as @e[tag=greenSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["greenCar"]}
 # Move the greenCar
@@ -40,7 +37,6 @@ execute as @e[tag=greenCar] at @s run tp @s ~0.75 ~ ~
 # Clone the blocks at the greenCar's position
 execute as @e[tag=greenCar] at @s run clone 11 -63 -9 3 -60 -5 ~ ~2 ~-2
 
-## Yellow car
 # Spawn new yellowCar
 execute if score world timer2 matches 1 run execute at @a as @e[tag=yellowSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["yellowCar"]}
 # Move the yellowCar
@@ -48,23 +44,35 @@ execute as @e[tag=yellowCar] at @s run tp @s ~-1 ~ ~
 # Clone the blocks at the yellowCar's position
 execute as @e[tag=yellowCar] at @s run clone -11 -63 -5 -3 -60 -9 ~ ~2 ~-2
 
-## Train 1
 # Spawn new  train1
 execute if score world timer2 matches 1 run execute at @a as @e[tag=train1Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train1"]}
 execute as @e[tag=train1] at @s run tp @s ~-4 ~ ~
 execute as @e[tag=train1] at @s run clone 18 -63 13 -16 -60 15 ~ ~2 ~-1
 
-## Train 2
 # Spawn new train2
 execute if score world timer2 matches 1 run execute at @a as @e[tag=train2Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train2"]}
 execute as @e[tag=train2] at @s run tp @s ~3 ~ ~
 execute as @e[tag=train2] at @s run clone 16 -63 13 -18 -60 15 ~ ~2 ~-1
 
-## Train 3
 # Spawn new train3
 execute if score world timer2 matches 1 run execute at @a as @e[tag=train3Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train3"]}
 execute as @e[tag=train3] at @s run tp @s ~-5 ~ ~
 execute as @e[tag=train3] at @s run clone 20 -63 13 -16 -60 15 ~ ~2 ~-1
+
+# Spawn new log3L
+execute as @e[tag=log3LSpawner] at @s run summon armor_stand ~ ~-1 ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["log3L"]}
+execute as @e[tag=log3L] at @s run tp @s ~0.3 ~ ~
+execute as @e[tag=log3L] at @s run clone -63 -14 -4 -63 -14 ~ ~2 ~
+
+# Spawn log2R
+execute as @e[tag=log2RSpawner] at @s run summon armor_stand ~ ~-1 ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["log2R"]}
+execute as @e[tag=log2R] at @s run tp @s ~-0.15~ ~
+execute as @e[tag=log2R] at @s run clone -63 -14 -4 -63 -14 ~ ~2 ~
+
+# Spawn log4L
+execute as @e[tag=log4LSpawner] at @s run summon armor_stand ~ ~-1 ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["log4L"]}
+execute as @e[tag=log4L] at @s run tp @s ~0.1 ~ ~
+execute as @e[tag=log4L] at @s run clone -63 -14 -4 -63 -14 ~ ~2 ~
 
 # Fill Tunnel entrances
 fill 16 3 22 16 8 32 minecraft:black_concrete
@@ -84,7 +92,6 @@ fill -16 3 110 -16 8 114 minecraft:black_concrete
 fill -16 3 118 -16 8 128 minecraft:black_concrete
 fill -16 3 161 -16 8 171 minecraft:black_concrete
 
-## Timers
 # Reset the 1-second timer if it reaches 20 ticks
 execute if score world timer1 matches 20 run scoreboard players set world timer1 0
 # Increment timer 1
