@@ -34,6 +34,11 @@ summon armor_stand 21 3 87 {Tags:["orangeSpawner"]}
 
 summon armor_stand -21 3 101 {Tags:["greenSpawner"]}
 
+summon armor_stand 21 3 112 {Tags:["ltrainSpawner"]}
+
+summon armor_stand -21 3 120 {Tags:["rtrainSpawner"]}
+summon armor_stand 21 3 126 {Tags:["ltrainSpawner"]}
+
 summon armor_stand 21 3 163 {Tags:["yellowSpawner"]}
 
 summon armor_stand -21 3 169 {Tags:["greenSpawner"]}
