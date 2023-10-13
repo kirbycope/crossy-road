@@ -59,6 +59,21 @@ execute as @e[tag=yellowCar] at @s run tp @s ~-1 ~ ~
 # execute as @e[tag=yellowCar] at @s run clone -10 -13 -5 -6 -10 3 ~-2 ~2 ~-4
 execute as @e[tag=yellowCar] at @s run clone -11 -63 -5 -3 -60 -9 ~ ~ ~-2
 
+## Train 1
+#execute as @e[tag=train1] at @s run tp @s ~ ~ ~4
+#execute as @e[tag=train1] at @s positioned ~-1 ~-1 60 run kill @s[dx=3,dy=5,dz=5]
+#execute as @e[tag=train1] at @s run clone 7 -13 22 5 -10 -10 ~ ~2 ~-31
+
+## Train 2
+#execute as @e[tag=train2] at @s run tp @s ~ ~ ~-3
+#execute as @e[tag=train2] at @s positioned ~-1 ~-1 -45 run kill @s[dx=3,dy=5,dz=-5]
+#execute as @e[tag=train2] at @s run clone 7 -13 25 5 -10 -7 ~ ~2 ~
+
+## Train 3
+#execute as @e[tag=train3] at @s run tp @s ~ ~ ~5
+#execute as @e[tag=train3] at @s positioned ~-1 ~-1 60 run kill @s[dx=3,dy=5,dz=5]
+#execute as @e[tag=train3] at @s run clone 7 -13 22 5 -10 -11 ~ ~2 ~-32
+
 # clone blue car blocks
 #blueCar 11 -63 5 3 -60 9
 #orangeCar -11 -63 9 -3 -60 5
