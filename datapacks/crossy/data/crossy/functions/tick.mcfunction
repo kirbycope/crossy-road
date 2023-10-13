@@ -42,7 +42,7 @@ execute as @e[tag=greenCar] at @s run tp @s ~0.75 ~ ~
 execute as @e[tag=greenCar] at @s positioned ~-1 ~-1 -13 run kill @s[dx=3,dy=5,dz=-5]
 # Clone the blocks at the greenCar's position
 # execute as @e[tag=greenCar] at @s run clone -16 -13 -5 -12 -10 3 ~-2 ~2 ~-4
-execute as @e[tag=greenCar] at @s run clone 11 -63 -9 3 -60 -6 ~ ~ ~-2
+execute as @e[tag=greenCar] at @s run clone 11 -63 -9 3 -60 -5 ~ ~ ~-2
 
 ## Yellow car
 # execute at @a as @e[tag=yellowSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["yellowCar"]}
