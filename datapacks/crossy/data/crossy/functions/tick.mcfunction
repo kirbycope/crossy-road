@@ -65,7 +65,7 @@ execute as @e[tag=train1] at @s run tp @s ~-4 ~ ~
 # execute as @e[tag=train1] at @s positioned ~-1 ~-1 60 run kill @s[dx=3,dy=5,dz=5]
 # TODO
 # execute as @e[tag=train1] at @s run clone 7 -13 22 5 -10 -10 ~ ~2 ~-31
-execute as @e[tag=train1] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~-31
+execute as @e[tag=train1] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~
 
 ## Train 2
 #execute at @a as @e[tag=train2Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train2"]}
