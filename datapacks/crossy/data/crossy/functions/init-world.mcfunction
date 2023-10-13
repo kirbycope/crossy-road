@@ -34,10 +34,10 @@ summon armor_stand 21 1 87 {Invulnerable:1b,Tags:["orangeSpawner"]}
 
 summon armor_stand -21 1 101 {Invulnerable:1b,Tags:["greenSpawner"]}
 
-summon armor_stand 21 1 112 {Invulnerable:1b,Tags:["train1"]}
+summon armor_stand 21 1 112 {Invulnerable:1b,Tags:["train1Spawner"]}
 
-summon armor_stand -21 1 120 {Invulnerable:1b,Tags:["train2"]}
-summon armor_stand 21 1 126 {Invulnerable:1b,Tags:["train3"]}
+summon armor_stand -21 1 120 {Invulnerable:1b,Tags:["train2Spawner"]}
+summon armor_stand 21 1 126 {Invulnerable:1b,Tags:["train3Spawner"]}
 
 summon armor_stand 21 1 163 {Invulnerable:1b,Tags:["yellowSpawner"]}
 
