@@ -57,7 +57,6 @@ execute as @e[tag=train1] at @s run clone 18 -63 13 -15 -60 15 ~ ~2 ~-1
 
 ## Train 2
 # Spawn new train2
-#execute at @a as @e[tag=train2Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train2"]}
 execute if score world timer2 matches 1 run execute at @a as @e[tag=train2Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train2"]}
 #execute as @e[tag=train2] at @s run tp @s ~3 ~ ~
 # execute as @e[tag=train2] at @s positioned ~-1 ~-1 -45 run kill @s[dx=3,dy=5,dz=-5]
