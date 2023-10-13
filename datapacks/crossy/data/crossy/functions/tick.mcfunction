@@ -7,6 +7,9 @@ tp @e[type=minecraft:chicken] 7 3.1 47
 # Remove chicken eggs
 kill @e[type=item]
 
+# Kill player(s) in water
+execute as @a[tag=init] run execute if block ~ ~ ~ minecraft:water run kill @s
+
 ## Blue car
 # Spawn blueCar
 execute if score world timer2 matches 1 run execute at @a as @e[tag=blueSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["blueCar"]}
@@ -53,21 +56,21 @@ execute as @e[tag=yellowCar] at @s run clone -11 -63 -5 -3 -60 -9 ~ ~2 ~-2
 execute if score world timer2 matches 1 run execute at @a as @e[tag=train1Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train1"]}
 execute as @e[tag=train1] at @s run tp @s ~-4 ~ ~
 # execute as @e[tag=train1] at @s positioned ~-1 ~-1 60 run kill @s[dx=3,dy=5,dz=5]
-execute as @e[tag=train1] at @s run clone 18 -63 13 -15 -60 15 ~ ~2 ~-1
+execute as @e[tag=train1] at @s run clone 18 -63 13 -16 -60 15 ~ ~2 ~-1
 
 ## Train 2
 # Spawn new train2
 execute if score world timer2 matches 1 run execute at @a as @e[tag=train2Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train2"]}
-#execute as @e[tag=train2] at @s run tp @s ~3 ~ ~
+execute as @e[tag=train2] at @s run tp @s ~3 ~ ~
 # execute as @e[tag=train2] at @s positioned ~-1 ~-1 -45 run kill @s[dx=3,dy=5,dz=-5]
-execute as @e[tag=train2] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~
+execute as @e[tag=train2] at @s run clone 16 -63 13 -18 -60 15 ~ ~2 ~-1
 
 ## Train 3
 # Spawn new train3
-execute at @a as @e[tag=train3Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train3"]}
+execute if score world timer2 matches 1 run execute at @a as @e[tag=train3Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train3"]}
 execute as @e[tag=train3] at @s run tp @s ~-5 ~ ~
 # execute as @e[tag=train3] at @s positioned ~-1 ~-1 60 run kill @s[dx=3,dy=5,dz=5]
-execute as @e[tag=train3] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~-32
+execute as @e[tag=train3] at @s run clone 20 -63 13 -16 -60 15 ~ ~2 ~-1
 
 # clone blue car blocks
 #blueCar 11 -63 5 3 -60 9
