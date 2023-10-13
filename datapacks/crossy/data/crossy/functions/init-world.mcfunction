@@ -28,7 +28,7 @@ summon armor_stand 21 3 30 {CustomName:'[{"text":"orangeSpawner"}]',CustomNameVi
 summon armor_stand -21 3 38 {CustomName:'[{"text":"blueSpawner"}]',CustomNameVisible:1b,Tags:["blueSpawner"]}
 
 summon armor_stand 21 3 73 {CustomName:'[{"text":"orangeSpawner"}]',CustomNameVisible:1b,Tags:["orangeSpawner"]}
-summon armor_stand -21 3 80 {CustomName:'[{"text":"blueSpawner"}]',CustomNameVisible:1b,Tags:["blueSpawner"]}
+summon armor_stand -21 3 79 {CustomName:'[{"text":"blueSpawner"}]',CustomNameVisible:1b,Tags:["blueSpawner"]}
 
 summon armor_stand 21 3 87 {CustomName:'[{"text":"orangeSpawner"}]',CustomNameVisible:1b,Tags:["orangeSpawner"]}
 
