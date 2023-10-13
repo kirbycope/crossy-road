@@ -1,6 +1,9 @@
 # Initialize new players
 execute as @a[tag=!init] run function crossy:init-player
 
+# Set max health to 0.1
+attribute @s minecraft:generic.max_health base set 0.1
+
 # Teleport chicken
 tp @e[type=minecraft:chicken] 7 3.1 47
 
