@@ -22,23 +22,23 @@ kill @e[tag=greenSpawner]
 kill @e[tag=orangeSpawner]
 kill @e[tag=yellowSpawner]
 
-summon armor_stand -21 3 24 {Invisible:1b,Invulnerable:1b,Tags:["blueSpawner"]}
-summon armor_stand 21 3 30 {Invisible:1b,Invulnerable:1b,Tags:["orangeSpawner"]}
+summon armor_stand -21 3 24 {Invulnerable:1b,Tags:["blueSpawner"]}
+summon armor_stand 21 3 30 {Invulnerable:1b,Tags:["orangeSpawner"]}
 
-summon armor_stand -21 3 38 {Invisible:1b,Invulnerable:1b,Tags:["blueSpawner"]}
+summon armor_stand -21 3 38 {Invulnerable:1b,Tags:["blueSpawner"]}
 
-summon armor_stand 21 3 73 {Invisible:1b,Invulnerable:1b,Tags:["orangeSpawner"]}
-summon armor_stand -21 3 79 {Invisible:1b,Invulnerable:1b,Tags:["blueSpawner"]}
+summon armor_stand 21 3 73 {Invulnerable:1b,Tags:["orangeSpawner"]}
+summon armor_stand -21 3 79 {Invulnerable:1b,Tags:["blueSpawner"]}
 
-summon armor_stand 21 3 87 {Invisible:1b,Invulnerable:1b,Tags:["orangeSpawner"]}
+summon armor_stand 21 3 87 {Invulnerable:1b,Tags:["orangeSpawner"]}
 
-summon armor_stand -21 3 101 {Invisible:1b,Invulnerable:1b,Tags:["greenSpawner"]}
+summon armor_stand -21 3 101 {Invulnerable:1b,Tags:["greenSpawner"]}
 
-summon armor_stand 21 3 112 {Invisible:1b,Invulnerable:1b,Tags:["train1"]}
+summon armor_stand 21 3 112 {Invulnerable:1b,Tags:["train1"]}
 
-summon armor_stand -21 3 120 {Invisible:1b,Invulnerable:1b,Tags:["train2"]}
-summon armor_stand 21 3 126 {Invisible:1b,Invulnerable:1b,Tags:["train3"]}
+summon armor_stand -21 3 120 {Invulnerable:1b,Tags:["train2"]}
+summon armor_stand 21 3 126 {Invulnerable:1b,Tags:["train3"]}
 
-summon armor_stand 21 3 163 {Invisible:1b,Invulnerable:1b,Tags:["yellowSpawner"]}
+summon armor_stand 21 3 163 {Invulnerable:1b,Tags:["yellowSpawner"]}
 
-summon armor_stand -21 3 169 {Invisible:1b,Invulnerable:1b,Tags:["greenSpawner"]}
+summon armor_stand -21 3 169 {Invulnerable:1b,Tags:["greenSpawner"]}
