@@ -73,7 +73,7 @@ execute as @e[tag=yellowCar] at @s run clone -11 -63 -5 -3 -60 -9 ~ ~ ~-2
 # execute as @e[tag=train2] at @s positioned ~-1 ~-1 -45 run kill @s[dx=3,dy=5,dz=-5]
 # TODO
 # execute as @e[tag=train2] at @s run clone 7 -13 25 5 -10 -7 ~ ~2 ~
-execute as @e[tag=train2] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~
+#execute as @e[tag=train2] at @s run clone 15 -63 13 -15 -60 15 ~ ~ ~
 
 ## Train 3
 #execute at @a as @e[tag=train3Spawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["train3"]}
@@ -81,7 +81,7 @@ execute as @e[tag=train2] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~
 # execute as @e[tag=train3] at @s positioned ~-1 ~-1 60 run kill @s[dx=3,dy=5,dz=5]
 # TODO
 # execute as @e[tag=train3] at @s run clone 7 -13 22 5 -10 -11 ~ ~2 ~-32
-execute as @e[tag=train3] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~-32
+#execute as @e[tag=train3] at @s run clone 15 -63 13 -15 -60 15 ~ ~2 ~-32
 
 # clone blue car blocks
 #blueCar 11 -63 5 3 -60 9
