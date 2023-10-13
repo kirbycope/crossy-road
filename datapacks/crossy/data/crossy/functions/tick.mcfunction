@@ -15,7 +15,7 @@ execute if score world timer2 matches 1 run execute at @a as @e[tag=blueSpawner,
 # execute as @e[tag=blueCar] at @s run tp @s ~ ~ ~-0.4
 execute as @e[tag=blueCar] at @s run tp @s ~0.4 ~ ~
 # Kill anyone the blueCar hit
-execute as @e[tag=blueCar] at @s positioned ~-1 ~-1 -13 run kill @s[dx=3,dy=5,dz=-5]
+#execute as @e[tag=blueCar] at @s positioned ~-1 ~-1 -13 run kill @s[dx=3,dy=5,dz=-5]
 # Clone the blocks at the blueCar's position
 # execute as @e[tag=blueCar] at @s run clone -28 -13 -5 -24 -10 3 ~-2 ~2 ~-4
 execute as @e[tag=blueCar] at @s run clone 11 -63 5 3 -60 9 ~ ~ ~-2
@@ -27,7 +27,8 @@ execute if score world timer2 matches 1 run execute at @a as @e[tag=orangeSpawne
 # execute as @e[tag=orangeCar] at @s run tp @s ~ ~ ~0.5
 execute as @e[tag=orangeCar] at @s run tp @s ~-0.5 ~ ~
 # Kill anyone the orangeCar hit
-execute as @e[tag=orangeCar] at @s positioned ~-1 ~-1 28 run kill @s[dx=3,dy=5,dz=5]
+# execute as @e[tag=orangeCar] at @s positioned ~-1 ~-1 28 run kill @s[dx=3,dy=5,dz=5]
+# TODO
 # Clone the blocks at the orangeCar's position
 # execute as @e[tag=orangeCar] at @s run clone -22 -13 -5 -18 -10 3 ~-2 ~2 ~-4
 execute as @e[tag=orangeCar] at @s run clone -11 -63 9 -3 -60 5 ~ ~ ~-2
@@ -39,7 +40,8 @@ execute if score world timer2 matches 1 run execute at @a as @e[tag=greenSpawner
 # execute as @e[tag=greenCar] at @s run tp @s ~ ~ ~-0.75
 execute as @e[tag=greenCar] at @s run tp @s ~0.75 ~ ~
 # Kill anyone the greenCar hit
-execute as @e[tag=greenCar] at @s positioned ~-1 ~-1 -13 run kill @s[dx=3,dy=5,dz=-5]
+# execute as @e[tag=greenCar] at @s positioned ~-1 ~-1 -13 run kill @s[dx=3,dy=5,dz=-5]
+# TODO
 # Clone the blocks at the greenCar's position
 # execute as @e[tag=greenCar] at @s run clone -16 -13 -5 -12 -10 3 ~-2 ~2 ~-4
 execute as @e[tag=greenCar] at @s run clone 11 -63 -9 3 -60 -5 ~ ~ ~-2
@@ -51,7 +53,8 @@ execute if score world timer2 matches 1 run execute at @a as @e[tag=yellowSpawne
 # execute as @e[tag=yellowCar] at @s run tp @s ~ ~ ~1
 execute as @e[tag=yellowCar] at @s run tp @s ~-1 ~ ~
 # Kill anyone the yellowCar hit
-execute as @e[tag=yellowCar] at @s positioned ~-1 ~-1 28 run kill @s[dx=3,dy=5,dz=5]
+# execute as @e[tag=yellowCar] at @s positioned ~-1 ~-1 28 run kill @s[dx=3,dy=5,dz=5]
+# TODO
 # Clone the blocks at the yellowCar's position
 # execute as @e[tag=yellowCar] at @s run clone -10 -13 -5 -6 -10 3 ~-2 ~2 ~-4
 execute as @e[tag=yellowCar] at @s run clone -11 -63 -5 -3 -60 -9 ~ ~ ~-2
