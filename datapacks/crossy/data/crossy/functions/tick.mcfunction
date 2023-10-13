@@ -64,6 +64,8 @@ execute as @e[tag=yellowCar] at @s run clone -11 -63 -5 -3 -60 -9 ~ ~ ~-2
 #orangeCar -11 -63 9 -3 -60 5
 #greenCar 11 -63 -9 3 -60 -6
 #yellowCar -11 -63 -5 -3 -60 -9
+#train 15 -63 13 -15 -60 15
+#log 4 -63 -14 -4 -63 -14
 
 # Fill Tunnel entrances
 fill 16 3 22 16 8 32 minecraft:black_concrete
