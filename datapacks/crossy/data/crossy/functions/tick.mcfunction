@@ -25,7 +25,7 @@ execute as @e[tag=blueCar] at @s run clone 11 -63 5 3 -60 9 ~ ~ ~-2
 execute if score world timer2 matches 1 run execute at @a as @e[tag=orangeSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["orangeCar"]}
 # Move the orangeCar armor stand
 # execute as @e[tag=orangeCar] at @s run tp @s ~ ~ ~0.5
-execute as @e[tag=orangeCar] at @s run tp @s ~0.5 ~ ~
+execute as @e[tag=orangeCar] at @s run tp @s ~-0.5 ~ ~
 # Kill anyone the orangeCar hit
 execute as @e[tag=orangeCar] at @s positioned ~-1 ~-1 28 run kill @s[dx=3,dy=5,dz=5]
 # Clone the blocks at the orangeCar's position
