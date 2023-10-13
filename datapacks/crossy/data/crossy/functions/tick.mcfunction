@@ -30,37 +30,37 @@ execute as @e[tag=orangeCar] at @s run tp @s ~-0.5 ~ ~
 execute as @e[tag=orangeCar] at @s positioned ~-1 ~-1 28 run kill @s[dx=3,dy=5,dz=5]
 # Clone the blocks at the orangeCar's position
 # execute as @e[tag=orangeCar] at @s run clone -22 -13 -5 -18 -10 3 ~-2 ~2 ~-4
-execute as @e[tag=orangeCar] at @s run clone -11 -63 9 -3 -60 5 ~-2 ~2 ~-4
+execute as @e[tag=orangeCar] at @s run clone -11 -63 9 -3 -60 5 ~ ~ ~-2
 
 ## Green car
 # execute at @a as @e[tag=greenSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["greenCar"]}
 execute if score world timer2 matches 1 run execute at @a as @e[tag=greenSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["greenCar"]}
 # Move the greenCar armor stand
 # execute as @e[tag=greenCar] at @s run tp @s ~ ~ ~-0.75
-execute as @e[tag=greenCar] at @s run tp @s ~-0.75 ~ ~
+execute as @e[tag=greenCar] at @s run tp @s ~0.75 ~ ~
 # Kill anyone the greenCar hit
 execute as @e[tag=greenCar] at @s positioned ~-1 ~-1 -13 run kill @s[dx=3,dy=5,dz=-5]
 # Clone the blocks at the greenCar's position
 # execute as @e[tag=greenCar] at @s run clone -16 -13 -5 -12 -10 3 ~-2 ~2 ~-4
-execute as @e[tag=greenCar] at @s run clone 11 -63 9 3 -60 -6 ~-2 ~2 ~-4
+execute as @e[tag=greenCar] at @s run clone 11 -63 -9 3 -60 -6 ~ ~ ~-2
 
 ## Yellow car
 # execute at @a as @e[tag=yellowSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["yellowCar"]}
 execute if score world timer2 matches 1 run execute at @a as @e[tag=yellowSpawner,distance=..40] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["yellowCar"]}
 # Move the yellowCar armor stand
 # execute as @e[tag=yellowCar] at @s run tp @s ~ ~ ~1
-execute as @e[tag=yellowCar] at @s run tp @s ~1 ~ ~
+execute as @e[tag=yellowCar] at @s run tp @s ~-1 ~ ~
 # Kill anyone the yellowCar hit
 execute as @e[tag=yellowCar] at @s positioned ~-1 ~-1 28 run kill @s[dx=3,dy=5,dz=5]
 # Clone the blocks at the yellowCar's position
 # execute as @e[tag=yellowCar] at @s run clone -10 -13 -5 -6 -10 3 ~-2 ~2 ~-4
-execute as @e[tag=yellowCar] at @s run clone -11 63 -5 -3 -60 -9 ~-2 ~2 ~-4
+execute as @e[tag=yellowCar] at @s run clone -11 -63 -5 -3 -60 -9 ~ ~ ~-2
 
 # clone blue car blocks
 #blueCar 11 -63 5 3 -60 9
 #orangeCar -11 -63 9 -3 -60 5
-#greenCar 11 -63 9 3 -60 -6
-#yellowCar -11 63 -5 -3 -60 -9
+#greenCar 11 -63 -9 3 -60 -6
+#yellowCar -11 -63 -5 -3 -60 -9
 
 # Fill Tunnel entrances
 fill 16 3 22 16 8 32 minecraft:black_concrete
