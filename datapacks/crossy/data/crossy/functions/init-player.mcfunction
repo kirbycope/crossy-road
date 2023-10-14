@@ -1,7 +1,3 @@
-# Scoreboards for timing
-scoreboard objectives add timer dummy
-scoreboard players add @s timer 0
-
 # Move to start
 tp @s 0 3 14
 
