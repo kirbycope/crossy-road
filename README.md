@@ -1,4 +1,4 @@
-![Crossy Road](/crossy-road-java.png)
+![Crossy Road Java](/crossy-road-java.png)
 
 # crossy-road-java
 Mysticat's [Crossy Road](https://www.youtube.com/watch?v=VUXTzIxvtrk) for Minecraft Java.
