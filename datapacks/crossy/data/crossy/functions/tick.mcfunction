@@ -92,6 +92,10 @@ fill -16 3 110 -16 8 114 minecraft:black_concrete
 fill -16 3 118 -16 8 128 minecraft:black_concrete
 fill -16 3 161 -16 8 171 minecraft:black_concrete
 
+# Kill cars out of range
+execute as @e[x=-27,y=1,z=-21,dx=0,dy=2,dz=145] run kill @s
+execute as @e[x=27,y=1,z=-21,dx=0,dy=2,dz=145] run kill @s
+
 # Reset the 1-second timer if it reaches 20 ticks
 execute if score world timer1 matches 20 run scoreboard players set world timer1 0
 # Increment timer 1
