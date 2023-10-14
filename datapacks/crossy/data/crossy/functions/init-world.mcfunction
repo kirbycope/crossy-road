@@ -23,18 +23,25 @@ kill @e[tag=blueSpawner]
 kill @e[tag=greenSpawner]
 kill @e[tag=orangeSpawner]
 kill @e[tag=yellowSpawner]
-kill @e[tag=train1Spawner]
-kill @e[tag=train2Spawner]
-kill @e[tag=train3Spawner]
 kill @e[tag=log2RSpawner]
 kill @e[tag=log3LSpawner]
 kill @e[tag=log4LSpawner]
+kill @e[tag=train1Spawner]
+kill @e[tag=train2Spawner]
+kill @e[tag=train3Spawner]
 
 summon armor_stand -21 1 24 {Invisible:1b,Invulnerable:1b,Tags:["blueSpawner"]}
 summon armor_stand 18 1 30 {Invisible:1b,Invulnerable:1b,Tags:["orangeSpawner"]}
 summon armor_stand 26 1 30 {Invisible:1b,Invulnerable:1b,Tags:["orangeSpawner"]}
 
 summon armor_stand -21 1 38 {Invisible:1b,Invulnerable:1b,Tags:["blueSpawner"]}
+
+summon armor_stand -21 1 53 {Invisible:1b,Invulnerable:1b,Tags:["log4LSpawner"]}
+
+summon armor_stand 18 1 57 {Invisible:1b,Invulnerable:1b,Tags:["log2RSpawner"]}
+summon armor_stand 21 1 57 {Invisible:1b,Invulnerable:1b,Tags:["log2RSpawner"]}
+
+summon armor_stand -21 1 61 {Invisible:1b,Invulnerable:1b,Tags:["log3LSpawner"]}
 
 summon armor_stand 18 1 73 {Invisible:1b,Invulnerable:1b,Tags:["orangeSpawner"]}
 summon armor_stand 26 1 73 {Invisible:1b,Invulnerable:1b,Tags:["orangeSpawner"]}
@@ -51,13 +58,19 @@ summon armor_stand 21 1 112 {Invisible:1b,Invulnerable:1b,Tags:["train1Spawner"]
 summon armor_stand -21 1 120 {Invisible:1b,Invulnerable:1b,Tags:["train2Spawner"]}
 summon armor_stand 21 1 126 {Invisible:1b,Invulnerable:1b,Tags:["train3Spawner"]}
 
+summon armor_stand -21 1 135 {Invisible:1b,Invulnerable:1b,Tags:["log3LSpawner"]}
+
+summon armor_stand 18 1 139 {Invisible:1b,Invulnerable:1b,Tags:["log2RSpawner"]}
+summon armor_stand 21 1 139 {Invisible:1b,Invulnerable:1b,Tags:["log2RSpawner"]}
+
+summon armor_stand -21 1 143 {Invisible:1b,Invulnerable:1b,Tags:["log4LSpawner"]}
+
+summon armor_stand -21 1 147 {Invisible:1b,Invulnerable:1b,Tags:["log3LSpawner"]}
+
+summon armor_stand 18 1 151 {Invisible:1b,Invulnerable:1b,Tags:["log2RSpawner"]}
+summon armor_stand 21 1 151 {Invisible:1b,Invulnerable:1b,Tags:["log2RSpawner"]}
+
 summon armor_stand 21 1 163 {Invisible:1b,Invulnerable:1b,Tags:["yellowSpawner"]}
 
 summon armor_stand -21 1 169 {Invisible:1b,Invulnerable:1b,Tags:["greenSpawner"]}
 
-summon armor_stand -21 1 53 {Invisible:1b,Invulnerable:1b,Tags:["log4LSpawner"]}
-
-summon armor_stand 18 1 57 {Invisible:1b,Invulnerable:1b,Tags:["log2RSpawner"]}
-summon armor_stand 21 1 57 {Invisible:1b,Invulnerable:1b,Tags:["log2RSpawner"]}
-
-summon armor_stand -21 1 61 {Invisible:1b,Invulnerable:1b,Tags:["log3LSpawner"]}
