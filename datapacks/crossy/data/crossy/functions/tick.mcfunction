@@ -94,12 +94,12 @@ fill -16 3 161 -16 8 171 minecraft:black_concrete
 
 ## Kill cars out of range
 # Kill out of range cars and logs, Right-side Part 1
-execute as @e[x=-33,y=1,z=21,dx=0,dy=0,dz=128] run kill @s
+execute as @e[x=-33,y=1,z=21,dx=0,dy=0,dz=89] run kill @s
 # Kill out of range trains, Right-side
-#execute as @e[x=-48,y=1,z=100,dx=0,dy=0,dz=128] run kill @s
+execute as @e[x=-54,y=1,z=110,dx=4,dy=0,dz=32] run kill @s
 
 # Kill out of range cars and logs, Left-side Part 1
-execute as @e[x=27,y=1,z=21,dx=0,dy=0,dz=128] run kill @s
+execute as @e[x=27,y=1,z=21,dx=0,dy=0,dz=189] run kill @s
 
 # Reset the 1-second timer if it reaches 20 ticks
 execute if score world timer1 matches 20 run scoreboard players set world timer1 0
