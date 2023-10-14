@@ -62,17 +62,17 @@ execute as @e[tag=train3] at @s run clone 20 -63 13 -16 -60 15 ~ ~2 ~-1
 # Spawn log2R
 execute if score world timer2 matches 1 run execute as @e[tag=log2RSpawner] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["log2R"]}
 execute as @e[tag=log2R] at @s run tp @s ~-0.15 ~ ~
-execute as @e[tag=log2R] at @s run clone 4 -63 -14 -4 -63 -14 ~ ~2 ~
+execute as @e[tag=log2R] at @s run clone 4 -63 -14 -4 -63 -14 ~ ~1 ~
 
 # Spawn new log3L
 execute if score world timer2 matches 1 run execute as @e[tag=log3LSpawner] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["log3L"]}
 execute as @e[tag=log3L] at @s run tp @s ~0.3 ~ ~
-execute as @e[tag=log3L] at @s run clone 4 -63 -14 -4 -63 -14 ~ ~2 ~
+execute as @e[tag=log3L] at @s run clone 4 -63 -14 -4 -63 -14 ~ ~1 ~
 
 # Spawn log4L
 execute if score world timer2 matches 1 run execute as @e[tag=log4LSpawner] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:["log4L"]}
 execute as @e[tag=log4L] at @s run tp @s ~0.1 ~ ~
-execute as @e[tag=log4L] at @s run clone 4 -63 -14 -4 -63 -14 ~ ~2 ~
+execute as @e[tag=log4L] at @s run clone 4 -63 -14 -4 -63 -14 ~ ~1 ~
 
 # Fill Tunnel entrances
 fill 16 3 22 16 8 32 minecraft:black_concrete
