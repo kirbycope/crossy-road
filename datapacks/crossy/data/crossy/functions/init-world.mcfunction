@@ -24,9 +24,9 @@ kill @e[tag=yellowSpawner]
 kill @e[tag=train1Spawner]
 kill @e[tag=train2Spawner]
 kill @e[tag=train3Spawner]
-kill @e[tag=log2R]
-kill @e[tag=log3L]
-kill @e[tag=log4L]
+kill @e[tag=log2RSpawner]
+kill @e[tag=log3LSpawner]
+kill @e[tag=log4LSpawner]
 
 summon armor_stand -21 1 24 {Invulnerable:1b,Tags:["blueSpawner"]}
 summon armor_stand 21 1 30 {Invulnerable:1b,Tags:["orangeSpawner"]}
@@ -49,8 +49,8 @@ summon armor_stand 21 1 163 {Invulnerable:1b,Tags:["yellowSpawner"]}
 
 summon armor_stand -21 1 169 {Invulnerable:1b,Tags:["greenSpawner"]}
 
-summon armor_stand -21 1 53 {Invulnerable:1b,Tags:["log4L"]}
+summon armor_stand -21 1 53 {Invulnerable:1b,Tags:["log4LSpawner"]}
 
-summon armor_stand 21 1 57 {Invulnerable:1b,Tags:["log2R"]}
+summon armor_stand 21 1 57 {Invulnerable:1b,Tags:["log2RSpawner"]}
 
-summon armor_stand -21 1 61 {Invulnerable:1b,Tags:["log3L"]}
+summon armor_stand -21 1 61 {Invulnerable:1b,Tags:["log3LSpawner"]}
