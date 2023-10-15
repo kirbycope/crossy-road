@@ -73,4 +73,3 @@ summon armor_stand 21 1 151 {Invisible:1b,Invulnerable:1b,Tags:["log2RSpawner"]}
 summon armor_stand 21 1 163 {Invisible:1b,Invulnerable:1b,Tags:["yellowSpawner"]}
 
 summon armor_stand -21 1 169 {Invisible:1b,Invulnerable:1b,Tags:["greenSpawner"]}
-
