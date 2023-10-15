@@ -1,7 +1,7 @@
 ![Crossy Road Java](/crossy-road-java.png)
 
 # crossy-road-java
-Mysticat's [Crossy Road](https://www.youtube.com/watch?v=VUXTzIxvtrk) for Minecraft Java.
+Mysticat's [Crossy Road](https://www.youtube.com/watch?v=VUXTzIxvtrk) for Minecraft Java Edition.
 
 ## Installation
 Use an existing world that is already setup to use the datapack.
